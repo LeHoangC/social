@@ -52,7 +52,9 @@ const storage = multer.diskStorage({
 const upload = multer({ storage })
 
 // connect mongoose
-
+app.get('/', (req, res) => {
+    res.json('Hello world!')
+})
 app.post('/auth/register', upload.single('picture'), register)
 app.post('/posts', upload.single('picture'), createPost)
 
