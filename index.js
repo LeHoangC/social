@@ -6,7 +6,7 @@ const multer = require('multer')
 const helmet = require('helmet')
 const morgan = require('morgan')
 const compression = require('compression')
-const path = require('node:path')
+const path = require('path')
 const { fileURLToPath } = require('url')
 
 const authRoutes = require('./routes/auth')
