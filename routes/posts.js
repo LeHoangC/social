@@ -8,7 +8,7 @@ const router = express.Router()
 
 router.post('/', verifyToken, createPost)
 
-router.get('/', verifyToken, getFeedPosts)
+router.get('/', getFeedPosts)
 router.get('/:userId/posts', verifyToken, getUserPosts)
 
 router.patch('/:id/like', verifyToken, likePost)
